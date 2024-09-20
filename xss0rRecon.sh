@@ -810,7 +810,7 @@ run_step_6() {
     echo -e "${BOLD_BLUE}URLs prepared successfully and files created.${NC}"
     echo -e "${BOLD_BLUE}arjun-urls.txt and output-php-links.txt have been created.${NC}"
 
-    # Step 2: Running Arjunhe on clean URLs if arjun-urls.txt is present
+    # Step 2: Running Arjun on clean URLs if arjun-urls.txt is present
 if [ -s arjun-urls.txt ]; then
     show_progress "Running Arjun on clean URLs"
     arjun -i arjun-urls.txt -oT arjun_output.txt -t 10 -w parametri.txt || handle_error "Arjun command"
